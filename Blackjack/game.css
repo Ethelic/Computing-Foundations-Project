@@ -1,0 +1,47 @@
+body::before {
+    display:block;
+    content: '';
+    height:100px;
+}
+body {
+    text-align:center;
+    justify-content:center;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#player-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#hit {
+    width:100px;
+    height:50px;
+    font-size:20px;
+}
+
+#stand {
+    width:100px;
+    height:50px;
+    font-size:20px;
+}
+
+#footer {
+    position:relative;
+    display:block;
+    width:100%;
+    height:50%;
+    bottom:0;
+}
+
+
+

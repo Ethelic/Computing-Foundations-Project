@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-danger">Blackjack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#SignUp" class="nav-link">Log In / Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Learn" class="nav-link">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Play" class="nav-link">Play</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#FAQ" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Sign up and log in area-->
+    <section id = "SignUp" class="bg-dark text-light p-4 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Learn and Play <span class="text-danger">Blackjack</span></h1>
+                    <p class="lead my-4">
+                        We focus on teaching our students the funamdentals of blackjack and the introduce them to new ways of practicing
+                        and playing this game with statistics in mind.
+                    </p>
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Log In
+                   </button>
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                         Sign Up
+                    </button>
+                </div>
+                <img class="img-fluid d-none d-sm-block w-25" src="img/blackjack.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Sign up modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                    <label for="username" class="col-form-label">
+                        Email/Username:
+                    </label>
+                    <input type="text" class="form-control" id="username" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="col-form-label">
+                        Password:
+                    </label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="col-form-label">
+                        Confirm Password:
+                    </label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Log in modal-->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                    <label for="username" class="col-form-label">
+                        Email/Username:
+                    </label>
+                    <input type="text" class="form-control" id="username" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="col-form-label">
+                        Password:
+                    </label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Beta testing area-->
+    <section class="bg-danger text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">
+                    Join Beta Testing
+                </h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email">
+                    <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Rule Modal 1-->
+    <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="ModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalToggleLabel">Dealer and Player</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              A game of Blackjack involves a player, a dealer, and a 52 card deck. The dealer gets 2 face up cards and a face down card. The player gets 2 face up cards. The goal is for the card values to add up to 21.
+               <p class="lead">
+                   Numbered cards are worth their value, any non-numbered card is worth 10 points apart from the ace.
+               </p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-target="#ModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Rule Modal 2-->
+      <div class="modal fade" id="ModalToggle2" aria-hidden="true" aria-labelledby="ModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalToggleLabel2">Decision</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Now, the player gets to choose whether he wants to hit, or stand. If hit, the player gains another face up card and may do this as many times as they want. However, if they go above 21 then they go "bust" and lose the game. If they choose to stand, the dealer reveals his face up card and the player who's closest to 21 wins. However, if the dealer goes above 21 then the player wins.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-target="#ModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Learn to play area-->
+    <section id="Learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/blackjackm.png" alt="" class="img-fluid w-75">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn To Play</h2>
+                    <p class="lead">Learn the core rules, winning strategies and plenty more by taking our course</p>
+                    <p>Our instructors have constructed a set of comprehensive set of rules, tips and tricks that will take your blackjack knowledge and skills to the very next level</p>
+                    <button class="btn btn-dark mt-3" data-bs-toggle="modal" href="#ModalToggle" role="button">
+                        <i class="bi bi-chevron-right"></i> Learn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Playing area-->
+    <section id="Play" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Ready To Play?</h2>
+                    <p class="lead">Take your blackjack skills to the next level by playing our various bots</p>
+                    <p>We have constructed an immersive way to play blackjack online using our virtual currency so you may get plenty of practice with no drawbacks</p>
+                    <a href="game.html">
+                        <button class="btn btn-danger mt-3">
+                            <i class="bi bi-chevron-right"></i> Play
+                        </button>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/blackjackm.png" alt="" class="img-fluid w-75">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQ Area-->
+    <section id="FAQ" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="FAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                            How do you play Blackjack?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="question-one">
+                        <div class="accordion-body">
+                            We have designed an easy to understand and follow course for you to learn. Simply press "Learn" on the banner.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                            Do you use real money?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="question-two">
+                        <div class="accordion-body">
+                           No, we have designed this website for you to learn and practice Blackjack without any risk. The currency is completely virtual and free.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                           Will I get addicted?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="question-three">
+                        <div class="accordion-body">
+                            Anything can become addictive. You just need to make sure you play only an appropriate amount.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                            Who created Blackjack?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="question-four">
+                        <div class="accordion-body">
+                            Blackjack originates from French casinos in the 1700s and used to be called "Ving-et-Un"
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                            What is question 5?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="question-five">
+                        <div class="accordion-body">
+                            I ran out of question ideas so I guess this will be question 5. Sorry :()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact information area-->
+    <section class="p-5 bg-danger text-light" id="Contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Location</span> 20 Lane Lane
+                        </li>
+                        <li class="list-group-item">
+                           <span class="fw-bold">Telephone Number</span> 0928372872
+                       </li>
+                       <li class="list-group-item">
+                           <span class="fw-bold">Email</span> Email@Email.Email
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer area-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; Blackjack</p>
+        </div>
+     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
